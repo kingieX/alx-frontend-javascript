@@ -1,11 +1,9 @@
-var task = false;
-var task2 = true;
-
 export default function taskBlock(trueOrFalse) {
+  const task = false;
+  const task2 = true;
 
+  // eslint-disable-next-line no-empty
   if (trueOrFalse) {
-    var task = true;
-    var task2 = false;
   }
 
   return [task, task2];
