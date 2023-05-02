@@ -1,9 +1,5 @@
-class HolbertonCourse {
+default export class HolbertonCourse {
   constructor(name, length, students) {
-    if (typeof name !== 'string' || typeof length !== 'number' || !Array.isArray(students)) {
-      throw new TypeError('Invalid argument type');
-    }
-
     this._name = name;
     this._length = length;
     this._students = students;
@@ -37,7 +33,7 @@ class HolbertonCourse {
 
   set students(students) {
     if (!Array.isArray(students)) {
-      throw new TypeError('Invalid argument type');
+      throw new TypeError('Students must be an array');
     }
     this._students = students;
   }
