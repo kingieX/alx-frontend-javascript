@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 class HolbertonCourse {
   constructor(name, length, students) {
     if (typeof name !== 'string' || typeof length !== 'number' || !Array.isArray(students)) {
