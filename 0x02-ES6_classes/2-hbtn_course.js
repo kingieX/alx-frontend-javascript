@@ -1,4 +1,4 @@
-export class HolbertonCourse {
+class HolbertonCourse {
   constructor(name, length, students) {
     if (typeof name !== 'string') {
       throw new TypeError('name must be a string');
