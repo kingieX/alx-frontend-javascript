@@ -37,6 +37,9 @@ class HolbertonCourse {
   }
 
   set students(students) {
+    if (!Array.isArray(students)) {
+      throw new TypeError('Invalid argument type');
+    }
     this._students = students;
   }
 }
